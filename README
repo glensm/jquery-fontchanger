@@ -1,0 +1,26 @@
+	FontChanger v0.9
+	Project site: github.com/glensm/jquery-fontchanger
+	Copyright 2011 Glen Smith
+	
+	Author: Glen Smith
+	Twitter: @glensm
+	Site: glensm.com
+	
+	Description:
+	Puts the guess work back into typography. Sometimes mostly late at night 
+	when you just can't think of what fonts to use. This minimal plugin
+	solves that problem for you. It lets you cycle through a default list of
+	fonts and you can also add your own.
+	
+	How to use it:
+
+	To start it up use the following code:
+	
+		$('body').fontchanger(options);
+		
+	You can add you own fonts by putting an array where options is above.
+		
+		$('body').fontchanger(["Museo","anonymous"]);
+	
+	Use the left and right keys on your keyboard (a keyboard is required)
+	to cycle through the fonts.
