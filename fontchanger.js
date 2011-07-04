@@ -1,6 +1,6 @@
 /*
 	FontChanger v0.9
-	Project site: http://glensm.github.com/jquery-fontchanger/
+	Project site: github.com/glensm/jquery-fontchanger
 	Copyright 2011 Glen Smith
 	
 	Author: Glen Smith
@@ -44,14 +44,17 @@ $.fn.fontchanger = function(options) {
 	// Font changer display is added
 	$('body').append('<div id="fontchanger" style="position:absolute;top:5px;right:5px;width:250px;height:20px;padding:5px;background:rgba(0, 0, 0, 0.8);color:#FFF;font-family:arial;overflow:hidden;">FontChanger - @glensm</div>');
 	
-	// When an element is clicked add a unique class tag to it
-    $("body").delegate("*", "click", function(){
-		current = String((new Date()).getTime()).replace(/\D/gi,'');
-		$(this).removeClass();
-		$(this).addClass(current);
+     // When an element is clicked add a unique class tag to it
+     $("body").delegate("*", "click", function(e){
+ 
+        console.log(e.target);
+ 
+        current = String((new Date()).getTime()).replace(/\D/gi,'');
+		$(e.target).removeClass();
+		$(e.target).addClass(current);
 		// Reset counter
 		n=0;
-    });
+     });
 
 	// Catch when a key is pressed, change font 
     $(document).keydown(function(e) {
@@ -83,4 +86,3 @@ $.fn.fontchanger = function(options) {
 
 };
 })(jQuery);
-
