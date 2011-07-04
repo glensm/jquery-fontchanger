@@ -1,6 +1,6 @@
 /*
 	FontChanger v0.9
-	Project site: github.com/glensm/jquery-fontchanger
+	Project site: http://glensm.github.com/jquery-fontchanger/
 	Copyright 2011 Glen Smith
 	
 	Author: Glen Smith
@@ -34,8 +34,9 @@ $.fn.fontchanger = function(options) {
 	var fonts  = ["Arial","Helvetica","sans-serif","Arial Black","Comic Sans MS","cursive","Courier New","monospace","Georgia","serif","Lucida Console","Monaco","Lucida Sans Unicode","Lucida Grande","Palatino Linotype","Palatino","Times New Roman","Times","Verdana","Tahoma","'Trebuchet MS'","Geneva"];
 	
 	// Adds fonts passed as options to fonts array
-	if(options.length >0) fonts = fonts.concat(options);
-	
+	if (typeof(options) != "undefined"){
+		if(options.length >0) fonts = fonts.concat(options);
+	}
 	var total = fonts.length;
 	var n=0;
 	var $current = "";
