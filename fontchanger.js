@@ -42,7 +42,7 @@ $.fn.fontchanger = function(options) {
 	var $current = "";
 
 	// Font changer display is added
-	$('body').append('<div id="fontchanger" style="position:absolute;top:5px;right:5px;width:250px;height:20px;padding:5px;background:rgba(0, 0, 0, 0.8);color:#FFF;font-family:arial;overflow:hidden;">FontChanger - @glensm</div>');
+	$('body').append('<div id="fontchanger" style="position:fixed;top:5px;right:5px;width:250px;height:20px;padding:5px;background:rgba(0, 0, 0, 0.8);color:#FFF;font-family:arial;overflow:hidden;">FontChanger - @glensm</div>');
 	
      // When an element is clicked add a unique class tag to it
      $("body").delegate("*", "click", function(e){
