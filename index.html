@@ -8,7 +8,7 @@
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #6bf39f;
+      background-color: #f7f7f7;
       font-family: Helvetica, Arial, FreeSans, san-serif;
       color: #000000;
     }
@@ -49,11 +49,15 @@
       Change fonts to sort out your typography with this jquery plugin. Brute Force Typography.
     </div>
 
+<h2>Demo</h2>
+<p>Click on an element and press left or right on your keyboard</p>
+<h1>Fontchanger h1</h1>
+<h2>Fontchanger h2</h2>
+<h3>Fontchanger h3</h3>
+<h4>Fontchanger h4</h4>
+<p>Fontchanger p</p>
     <h2>Authors</h2>
-<p>Glen Smith (glen@glensm.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p> (glen@glensm.com)<br/>      </p>
-
+<p>Glen Smith (glen@glensm.com)</p>
 
     <h2>Download</h2>
     <p>
@@ -72,6 +76,10 @@
 
   </div>
 
-  
+  <script src="https://raw.github.com/glensm/jquery-fontchanger/master/fontchanger.js"></script>
+<script>
+	// Pass on new fonts by passing them in an array
+	$('body').fontchanger(["Copperplate"]);
+</script>
 </body>
 </html>
